@@ -1,0 +1,418 @@
+/* 
+    ================================
+        Best Viewed In Full Page
+    ================================
+*/
+
+
+/* Hover over a card to flip, can tab too. */
+
+
+/* default */
+
+.loadBackground,
+.Preloader {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+}
+
+.loadBackground {
+    z-index: 1;
+    background-color: #000000;
+    display: block;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* body */
+
+body {
+    min-height: 100vh;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: hsl(220, 10%, 12%);
+    font-family: 'Squada One', cursive;
+}
+
+
+/* .flip-card-container */
+
+.flip-card-container {
+    --hue: 150;
+    --primary: hsl(var(--hue), 50%, 50%);
+    --white-1: hsl(0, 0%, 90%);
+    --white-2: hsl(0, 0%, 80%);
+    --dark: hsl(var(--hue), 25%, 10%);
+    --grey: hsl(0, 0%, 50%);
+    width: 310px;
+    height: 500px;
+    margin: 40px;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+
+/* .flip-card */
+
+.flip-card {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: 0.6s 0.1s;
+}
+
+
+/* hover state */
+
+.flip-card-container:hover .flip-card,
+.flip-card-container:focus-within .flip-card {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+
+/* .card-... */
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    border: 2px solid #000000;
+    background: var(--dark);
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* .card-front */
+
+.card-front {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    z-index: 2;
+}
+
+
+/* .card-back */
+
+.card-back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+
+/* figure */
+
+figure {
+    z-index: -1;
+}
+
+
+/* figure, .img-bg */
+
+figure,
+.img-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* img */
+
+img {
+    height: 100%;
+}
+
+.img-radius {
+    border-radius: 24px;
+}
+
+
+/* figcaption */
+
+figcaption {
+    font-size: 1.5em;
+    display: block;
+    width: auto;
+    margin-top: 12%;
+    padding: 8px 22px;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 12px;
+    color: black;
+    background: transparent;
+}
+
+
+/* .img-bg */
+
+.img-bg {
+    background: hsla(var(--hue), 50%, 50%, 0);
+}
+
+.card-front .img-bg {
+    -webkit-clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
+    clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
+}
+
+.card-front .img-bg::before {
+    content: "";
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(18deg);
+    transform: translate(-50%, -50%) rotate(18deg);
+    width: 100%;
+    height: 6px;
+    border: 1px solid var(--primary);
+    border-left-color: transparent;
+    border-right-color: transparent;
+    transition: 0.1s;
+}
+
+.card-back .img-bg {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
+}
+
+
+/* hover state */
+
+.flip-card-container:hover .card-front .img-bg::before {
+    width: 6px;
+    border-left-color: var(--primary);
+    border-right-color: var(--primary);
+}
+
+
+/* button */
+
+button {
+    font-family: 'Squada One', cursive;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    padding: 9px 20px;
+    border: 1px solid #d3d3d3;
+    background: transparent;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    color: black;
+    background: #d3d3d3;
+    border-color: #d3d3d3;
+}
+
+button:active {
+    -webkit-transform: translate(2px);
+    transform: translate(2px);
+}
+
+.logo-top {
+    z-index: 1;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+/*footer*/
+
+.Footer {
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 70px;
+    color: #ffffff;
+    font-family: 'Squada One', cursive;
+    font-size: 10px;
+    font-style: normal;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .Footer {
+        top: 0;
+        height: 5%;
+        padding-bottom: 40px;
+        background: #151515;
+    }
+    .index-page .Footer {
+        width: 100%;
+        background: black;
+        top: -4px;
+    }
+}
+
+.index-page .Footer {
+    position: fixed;
+    bottom: -1px;
+}
+
+.portfolio-work .Footer {
+    display: none;
+}
+
+.text-page .Footer {
+    background: #151515;
+}
+
+.Footer-menu {
+    list-style-type: none;
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    text-align: justify;
+}
+
+@media (max-width: 600px) {
+    .Footer-menu {
+        margin-left: 10%;
+        min-width: 0;
+        max-width: 700px;
+        padding-top: 10px;
+        height: 150%;
+        margin-right: 0;
+        text-align: left;
+    }
+    .index-page .Footer-menu {
+        margin-left: 0;
+    }
+}
+
+.Footer-menu:after {
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    content: "";
+}
+
+.Footer-menu>li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+    .Footer-menu>li {
+        display: inline;
+        text-align: left;
+        min-width: 500px;
+    }
+}
+
+.Footer-menu>li:first-child {
+    height: 100%;
+    padding-left: 7.7%;
+}
+
+@media (max-width: 600px) {
+    .Footer-menu>li:first-child {
+        height: auto;
+        padding-left: 0;
+    }
+}
+
+.Footer-menu>li.last {
+    padding-right: 7.7%;
+}
+
+.Footer .link-st {
+    margin-top: 0.23em;
+    margin-bottom: 0.23em;
+    font-size: 1.8em;
+    font-family: 'Squada One', cursive;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .Footer-logoWr {
+        padding-left: 0%;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        height: auto;
+    }
+}
+
+.link-st {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-left: 0.66em;
+    margin-right: 0.66em;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.link-st:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 0;
+    content: "";
+    -webkit-transition: border 0.2s linear 0s, bottom 0.2s linear 0s;
+    -moz-transition: border 0.2s linear 0s, bottom 0.2s linear 0s;
+    -o-transition: border 0.2s linear 0s, bottom 0.2s linear 0s;
+    transition: border 0.2s linear 0s, bottom 0.2s linear 0s;
+}
+
+.link-st:hover:after {
+    bottom: 38%;
+    border-width: 3px;
+}
+
+.vItemSelected {
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+
+.vItemNo {
+    padding: 5px;
+}

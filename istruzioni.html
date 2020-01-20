@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="Description" content="Colombiana" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <!--<base href="/" />-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+
+    <link rel="icon" type="image/png" href="img/fav.png">
+
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
+
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/independent/modernizr.custom.js"></script>
+
+
+
+    <!--[if lt IE 9]>
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+	</script>
+	<![endif]-->
+
+    <title>COLOMBIANA</title>
+</head>
+
+<body class='index-page unloaded'>
+    <img class="loadBackground" src="" alt="" />
+
+
+    <div>
+        <a href="index.html"><img src="img/logo/classic.png" alt="logo" class="logo-top"> </a>
+    </div>
+
+    <section class="section">
+        <a class="pallini" onclick="a()" style="scroll-behavior: smooth;"></a>
+        <script>
+            function a() {
+                window.location.href = "#1";
+                $(".pallini").css("background-color", "white")
+                $(".pallini:eq(0)").css("background-color", "black")
+
+            }
+        </script>
+
+        <a class="pallini" onclick="b()" style="scroll-behavior: smooth;"></a>
+        <script>
+            function b() {
+                window.location.href = "#2"
+                $(".pallini").css("background-color", "white")
+                $(".pallini:eq(1)").css("background-color", "black")
+
+            }
+        </script>
+
+        <a class="pallini" onclick="c()"></a>
+        <script>
+            function c() {
+                window.location.href = "#3";
+                $(".pallini").css("background-color", "white")
+                $(".pallini:eq(2)").css("background-color", "black")
+
+
+            }
+        </script>
+
+        <script>
+            on_slide_change = function() {
+                console.log(window)
+                console.log(window.location.href)
+                if (window.location.href.endsWith("#1")) return a();
+                if (window.location.href.endsWith("#2")) return b();
+                if (window.location.href.endsWith("#3")) return c();
+                return a();
+            }
+
+
+            window.onhashchange = on_slide_change
+            window.addEventListener("load", function() {
+                on_slide_change();
+            })
+        </script>
+
+    </section>
+
+    <div id="parallax" class="Parallax">
+
+
+        <!--UNISCO-->
+        <div id="intro">
+
+
+            <img data-speed="1.5" src="img/unisci.jpg" class="intro-pic" alt="" />
+
+
+            <div class="fullScreen topCaption" data-speed="4">
+                <h2 style="max-width: 30%;"> <span style="font-size: 2em; color: rgb(0, 0, 0);   font-family: 'Squada One', cursive;">UNISCI</span> <br>3,5 g di ittiolo e 21,5 g di zinco <i class="fas fa-arrow-right"></i> </h2>
+            </div>
+
+        </div>
+
+        <!--MESCOLA-->
+        <div id="intro">
+
+            <img data-speed="1.5" src="img/mescola2.jpg" class="intro-pic" alt="" />
+
+            <div class="fullScreen topCaption" data-speed="4">
+                <h2 style="max-width: 30%;"> <span style="font-size: 2em; color: rgb(0, 0, 0);   font-family: 'Squada One', cursive;">MESCOLA</span> <br>Aiutati con il bastoncino presente nel kit
+                    <i class="fas fa-arrow-right"></i> </h2>
+            </div>
+
+        </div>
+
+        <!--APPLICA-->
+        <div id="intro">
+
+            <img data-speed="1.5" src="img/applica.jpg" class="intro-pic" alt="" />
+
+            <div class="fullScreen topCaption" data-speed="4">
+                <h2 style="max-width: 30%;"> <span style="font-size: 2em; color: rgb(0, 0, 0);   font-family: 'Squada One', cursive;">APPLICA</span> <br>2 volte al giorno per 4 giorni
+                    <i class="fas fa-arrow-right"></i> </h2>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+    <div class="nav-animation">
+        <img src="img/mouse.gif" alt="scroll" />
+    </div>
+    <a class="right-arrow">
+        <img src="img/arrow_right.png" alt="" />
+    </a>
+    <a class="left-arrow">
+        <img src="img/arrow_left.png" alt="" />
+    </a>
+
+
+
+    <div id="footer" class="Footer">
+        <ul class="Footer-menu">
+
+            <li class="team vAligner">
+                <a class="link-st vItem " href="kit.html"> <span class="vItemNo">KIT</span> </a>
+            </li>
+            <li class="team vAligner">
+                <a class="link-st vItem" href="istruzioni.html"> <span class="vItemSelected">ISTRUZIONI</span></a>
+            </li>
+            <li>
+                <a class="link-st vItem" href="esperienze.html"> <span class="vItemNo">ESPERIENZE</span></a>
+            </li>
+            <li class="location last">
+                <a class="link-st vItem" href="acquista.html"> <span class="vItemNo">ACQUISTA</span></a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <script type="text/javascript" src="js/base.js"></script>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script type="text/javascript" src="js/index.js"></script>
+
+
+
+</body>
+
+</html>

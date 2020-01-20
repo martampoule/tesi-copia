@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="Description" content="Colombiana" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <!--<base href="/" />-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+
+    <link rel="icon" type="image/png" href="img/fav.png">
+
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
+
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/independent/modernizr.custom.js"></script>
+
+
+
+    <!--[if lt IE 9]>
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+	</script>
+	<![endif]-->
+
+    <title>COLOMBIANA</title>
+</head>
+
+<body class='index-page unloaded'>
+
+    <img class="loadBackground" src="" alt="" />
+
+    <div>
+        <a href="index.html"><img src="img/logo/classic.png" alt="logo" class="logo-top"> </a>
+    </div>
+
+
+    <section class="section">
+        <a class="pallini" onclick="a()" style="scroll-behavior: smooth;"></a>
+        <script>
+            function a() {
+                window.location.href = "#1";
+                $(".pallini").css("background-color", "white")
+                $(".pallini:eq(0)").css("background-color", "black")
+
+            }
+        </script>
+
+        <a class="pallini" onclick="b()" style="scroll-behavior: smooth;"></a>
+        <script>
+            function b() {
+                window.location.href = "#2"
+                $(".pallini").css("background-color", "white")
+                $(".pallini:eq(1)").css("background-color", "black")
+
+            }
+        </script>
+
+        <a class="pallini" onclick="c()"></a>
+        <script>
+            function c() {
+                window.location.href = "#3";
+                $(".pallini").css("background-color", "white")
+                $(".pallini:eq(2)").css("background-color", "black")
+
+
+            }
+        </script>
+
+        <a class="pallini" onclick="d()"></a>
+        <script>
+            function d() {
+                window.location.href = "#4";
+                $(".pallini").css("background-color", "white")
+                $(".pallini:eq(3)").css("background-color", "black")
+
+
+            }
+        </script>
+
+        <a class="pallini" onclick="e()"></a>
+        <script>
+            function e() {
+                window.location.href = "#5";
+                $(".pallini").css("background-color", "white")
+                $(".pallini:eq(4)").css("background-color", "black")
+
+
+            }
+        </script>
+
+        <script>
+            on_slide_change = function() {
+                console.log(window)
+                console.log(window.location.href)
+                if (window.location.href.endsWith("#1")) return a();
+                if (window.location.href.endsWith("#2")) return b();
+                if (window.location.href.endsWith("#3")) return c();
+                if (window.location.href.endsWith("#4")) return d();
+                if (window.location.href.endsWith("#5")) return e();
+                return a();
+            }
+
+
+            window.onhashchange = on_slide_change
+            window.addEventListener("load", function() {
+                on_slide_change();
+            })
+        </script>
+
+    </section>
+
+    <div id="parallax" class="Parallax">
+
+
+        <!--kit-->
+        <div id="intro">
+
+
+            <img data-speed="1.5" src="img/kit2.jpg" class="intro-pic" alt="" />
+            <div class="fullScreen topCaption" data-speed="4">
+                <h2 style="max-width: 30%;"> <span style="font-size: 2em; color: rgb(0, 0, 0); font-family: 'Squada One', cursive;">KIT</span> <br>Il kit Colombiana ti permette di affrontare ogni momento senza paura. Contiene gli strumenti necessari per la preparazione della crema,
+                    così da avere sempre a portata di mano la soluzione in caso di sbucciatura.
+                    <br><br>
+                    <button class="calltoaction"> ACQUISTA</button> <br> <button class="calltoaction" style="margin-top: 10px;"> DONA</button> </h2>
+
+            </div>
+
+        </div>
+
+        <!--barattolo-->
+        <div id="intro">
+
+
+            <img data-speed="1.5" src="img/barattolo.jpg" class="intro-pic" alt="" />
+
+
+            <div class="fullScreen topCaption" data-speed="4">
+                <h2 style="max-width: 30%;"> <span style="font-size: 2em; color: rgb(0, 0, 0);   font-family: 'Squada One', cursive;">BARATTOLO</span> <br>Il barattolo è il luogo dove avviene l’unione dell’ittiolo e dello zinco. Grazie alle quantità segnate sul contenitore, non dovrai
+                    mai pesare gli ingredienti, e potrai preparare in breve tempo la Colombiana. <br><br>
+
+            </div>
+
+        </div>
+
+        <!--ittiolo-->
+        <div id="intro">
+
+
+            <img data-speed="1.5" src="img/ittiolo.jpg" class="intro-pic" alt="" />
+
+
+            <div class="fullScreen topCaption" data-speed="4">
+                <h2 style="max-width: 30%;"> <span style="font-size: 2em; color: rgb(0, 0, 0);   font-family: 'Squada One', cursive;">ITTIOLO</span> <br>L’ittiolo è un medicamento scoperto intorno al 1900 da un medico e fisico tedesco, <br> Paul Gerson Unna. Serve per curare le <br>                    lesioni della pelle, ma anche foruncoli e infiammazioni della cute.
+                    <i class="fas fa-arrow-right"></i>
+
+                </h2>
+            </div>
+
+        </div>
+
+        <!--zinco-->
+        <div id="intro">
+
+
+            <img data-speed="1.5" src="img/zinco.jpg" class="intro-pic" alt="" />
+
+
+            <div class="fullScreen topCaption" data-speed="4">
+                <h2 style="max-width: 30%;"> <span style="font-size: 2em; color: rgb(0, 0, 0);  font-family: 'Squada One', cursive; ">ZINCO</span> <br>Lo zinco è un metallo scoperto per la prima volta nel 1746 d.C. da Andreas Margraaf. L’unguento di zinco è un farmaco, il cui principio
+                    attivo è l’ossido di zinco e ha funzioni antivirali.
+
+                </h2>
+            </div>
+
+        </div>
+
+        <!--bastoncino-->
+        <div id="intro">
+
+
+            <img data-speed="1.5" src="img/bastoncino.jpg" class="intro-pic" alt="" />
+
+
+            <div class="fullScreen topCaption" data-speed="4">
+                <h2 style="max-width: 30%;"> <span style="font-size: 2em; color: rgb(0, 0, 0);   font-family: 'Squada One', cursive;">BASTONCINO</span> <br>Il bastoncino per mescolare, grazie alla forma a “T”, permette di girare gli ingredienti in maniera semplice e veloce.
+                    <i class="fas fa-arrow-right"></i> </h2>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="nav-animation">
+        <img src="img/mouse.gif" alt="scroll" />
+    </div>
+    <a class="right-arrow">
+        <img src="img/arrow_right.png" alt="" />
+    </a>
+    <a class="left-arrow">
+        <img src="img/arrow_left.png" alt="" />
+    </a>
+
+
+
+    <div id="footer" class="Footer">
+        <ul class="Footer-menu">
+
+            <li class="team vAligner">
+                <a class="link-st vItem " href="kit.html"> <span class="vItemSelected">KIT</span> </a>
+            </li>
+            <li class="team vAligner">
+                <a class="link-st vItem" href="istruzioni.html"> <span class="vItemNo">ISTRUZIONI</span></a>
+            </li>
+            <li>
+                <a class="link-st vItem" href="esperienze.html"> <span class="vItemNo">ESPERIENZE</span></a>
+            </li>
+            <li class="location last">
+                <a class="link-st vItem" href="acquista.html"> <span class="vItemNo">ACQUISTA</span></a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <script type="text/javascript" src="js/base.js"></script>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script type="text/javascript" src="js/index.js"></script>
+
+
+
+</body>
+
+</html>

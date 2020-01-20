@@ -1,0 +1,117 @@
+<section>
+    <a class="pallini" onclick="a()" style="scroll-behavior: smooth;"></a>
+    <script>
+        function a() {
+            window.location.href = "#1";
+
+        }
+    </script>
+
+    <a class="pallini" onclick="b()" style="scroll-behavior: smooth;"></a>
+    <script>
+        function b() {
+            window.location.href = "#2"
+
+        }
+    </script>
+
+    <a class="pallini" onclick="c()"></a>
+    <script>
+        function c() {
+            window.location.href = "#3";
+
+
+        }
+    </script>
+
+    <a class="pallini" onclick="d()"></a>
+    <script>
+        function d() {
+            window.location.href = "#4";
+
+
+        }
+    </script>
+
+    <a class="pallini" onclick="e()"></a>
+    <script>
+        function e() {
+            window.location.href = "#5";
+
+
+        }
+    </script>
+
+    <a class="pallini" onclick="f()"></a>
+    <script>
+        function f() {
+            window.location.href = "#6";
+
+
+        }
+    </script>
+
+    <a class="pallini" onclick="g()"></a>
+    <script>
+        function g() {
+            window.location.href = "#7";
+
+
+        }
+    </script>
+
+    <a class="pallini" onclick="h()"></a>
+    <script>
+        function h() {
+            window.location.href = "#8";
+
+
+        }
+    </script>
+
+    <a class="pallini" onclick="i()"></a>
+    <script>
+        function i() {
+            window.location.href = "#9";
+
+
+        }
+    </script>
+
+    <a class="pallini" onclick="j()"></a>
+    <script>
+        function j() {
+            window.location.href = "#10";
+
+
+        }
+    </script>
+
+    <a class="pallini" onclick="k()"></a>
+    <script>
+        function k() {
+            window.location.href = "#11";
+
+
+        }
+    </script>
+
+    <a class="pallini" onclick="l()"></a>
+    <script>
+        function l() {
+            window.location.href = "#12";
+
+
+        }
+    </script>
+
+    <a class="pallini" onclick="m()"></a>
+    <script>
+        function m() {
+            window.location.href = "#13";
+
+
+        }
+    </script>
+
+</section>

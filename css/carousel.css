@@ -1,0 +1,329 @@
+@font-face {
+    font-family: 'eurostile';
+    src: local('eurostile'), url('../EurostileLT-Condensed.woff') format('woff');
+}
+
+.item {
+    height: 500px;
+}
+
+.container {
+    margin-top: 70px;
+}
+
+.logo-top {
+    z-index: 1;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.vItemSelected {
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+
+.carousel-control {
+    text-shadow: none;
+    opacity: 100%;
+}
+
+.carousel-control.left {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0000) 0%)
+}
+
+.carousel-control.right {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0000) 0%)
+}
+
+.carousel-caption {
+    color: black;
+    text-shadow: none;
+    font-family: "eurostile";
+    padding-bottom: 0;
+    position: absolute;
+    margin: -20px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.freccia {
+    color: black;
+    opacity: 100%;
+}
+
+
+/*footer*/
+
+.Footer {
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 70px;
+    color: #ffffff;
+    font-family: 'Squada One', cursive;
+    font-size: 10px;
+    font-style: normal;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .Footer {
+        top: 0;
+        height: 5%;
+        padding-bottom: 40px;
+        background: #151515;
+    }
+    .index-page .Footer {
+        width: 100%;
+        background: black;
+        top: -4px;
+    }
+}
+
+.index-page .Footer {
+    position: fixed;
+    bottom: -1px;
+}
+
+.portfolio-work .Footer {
+    display: none;
+}
+
+.text-page .Footer {
+    background: #151515;
+}
+
+.Footer-menu {
+    list-style-type: none;
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    text-align: justify;
+}
+
+@media (max-width: 600px) {
+    .Footer-menu {
+        margin-left: 10%;
+        min-width: 0;
+        max-width: 700px;
+        padding-top: 10px;
+        height: 150%;
+        margin-right: 0;
+        text-align: left;
+    }
+    .index-page .Footer-menu {
+        margin-left: 0;
+    }
+}
+
+.Footer-menu:after {
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    content: "";
+}
+
+.Footer-menu>li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+    .Footer-menu>li {
+        display: inline;
+        text-align: left;
+        min-width: 500px;
+    }
+}
+
+.Footer-menu>li:first-child {
+    height: 100%;
+    padding-left: 5.2%;
+}
+
+@media (max-width: 600px) {
+    .Footer-menu>li:first-child {
+        height: auto;
+        padding-left: 0;
+    }
+}
+
+.Footer-menu>li.last {
+    padding-right: 7.7%;
+}
+
+.Footer .link-st {
+    margin-top: 0.23em;
+    margin-bottom: 0.23em;
+    font-size: 1.8em;
+    font-family: 'Squada One', cursive;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .Footer-logoWr {
+        padding-left: 0%;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        height: auto;
+    }
+}
+
+.link-st {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-left: 0.66em;
+    margin-right: 0.66em;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.link-st:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 0;
+    content: "";
+    -webkit-transition: border 0.2s linear 0s, bottom 0.2s linear 0s;
+    -moz-transition: border 0.2s linear 0s, bottom 0.2s linear 0s;
+    -o-transition: border 0.2s linear 0s, bottom 0.2s linear 0s;
+    transition: border 0.2s linear 0s, bottom 0.2s linear 0s;
+}
+
+.link-st:hover:after {
+    bottom: 38%;
+    border-width: 3px;
+}
+
+.piu {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+    border-style: solid;
+    border-color: black;
+}
+
+.piu:hover {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid black;
+    border-style: solid;
+    border-color: black;
+    color: black;
+}
+
+.icona {
+    color: white;
+    padding-top: 10%;
+}
+
+.icona:hover {
+    color: rgb(0, 0, 0);
+}
+
+.item2 {
+    display: none;
+}
+
+.modale-img {
+    font-size: 0.5em;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 1px;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.modal-title {
+    font-family: 'Squada One', cursive;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.modal-header {
+    margin-bottom: 0;
+}
+
+.btn {
+    font-family: 'Squada One', cursive;
+    letter-spacing: 0.5px;
+}
+
+.unloaded {
+    height: 100%;
+    overflow: hidden;
+}
+
+.loadBackground,
+.Preloader {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+}
+
+.loadBackground {
+    z-index: 1;
+    background-color: #000000;
+    display: block;
+}
+
+.Preloader {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.Preloader:after {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    content: "";
+}
+
+.Preload-end,
+.Preload-start {
+    top: 0;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+}
+
+.Preload-endImg,
+.Preload-startImg {
+    width: 200px;
+    height: 51px;
+}
+
+.Preload-startImg {
+    float: right;
+}
+
+.Preload-endImg {
+    float: left;
+}

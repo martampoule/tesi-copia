@@ -1,0 +1,3 @@
+The MIT License
+
+Copyright 2013 Hot Dot http://hotdot.pro/
